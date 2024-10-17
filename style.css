@@ -1,1 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efeito de hover */
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    padding: 0;
+    z-index: 1; /* Para garantir que o submenu apareça acima */
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-weight: bold; /* Destaca os títulos */
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px; /* Aumenta o padding */
+    margin-top: 20px;
+}
+
+/* Adicionando um pouco de sombra ao texto para melhorar a visibilidade */
+h2, h3, p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
 
